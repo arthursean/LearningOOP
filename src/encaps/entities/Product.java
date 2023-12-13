@@ -5,24 +5,23 @@ public class Product {
     private double price;
     private String name;
 
+    public Product(String name, double price){
+        this.name = name;
+        this.price = price;
+    }//sobrecarga para poder mandar tb sem parametros
+    public Product(){}
+
     public void setName(String name) {
         this.name = name;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
     }
 
     public void setPrice(double price) {
         this.price = price;
     }
 
-    public Product(String name, double price, int quantity){
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
-    }//sobrecarga para poder mandar tb sem parametros
-    public Product(){}
+    public String getName() {
+        return name;
+    }
 
     public double getPrice() {
         return price;
@@ -32,17 +31,24 @@ public class Product {
         return quantity;
     }
 
-    public String getName() {
-        return name;
+    public void addProducts(int quantity){
+        this.quantity += quantity;
     }
 
+    public void removeProducts(int quantity){
+        this.quantity -= quantity;
+        if(this.quantity < 0){
+            this.quantity = 0;
+        }
+    }
     public String toString(){
         return "Data: "
                 + name
                 + ", $ "
                 + price
                 + ", Quantidade em estoque: "
-                + ". Valor total em estoque : "
+                + quantity
+                + ", Valor total em estoque : "
                 + price * quantity;
     }
 

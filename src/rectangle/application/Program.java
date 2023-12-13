@@ -3,7 +3,7 @@ package rectangle.application;
 import rectangle.entities.Rectangle;
 
 public class Program {
-    public static void main(String args[]){
+    public static void main(String[] args){
         Rectangle retangulo = new Rectangle();
         retangulo.height = 3;
         retangulo.width = 4;
