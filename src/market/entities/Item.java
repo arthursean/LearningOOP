@@ -5,6 +5,17 @@ public class Item {
     public double price;
     public String name;
 
+    public Item(){}
+    public Item(String name, double price, int quant){
+        this.name = name;
+        this.price = price;
+        this.quant = quant;
+    }
+
+    public Item(String name, double price){
+        this.name = name;
+        this.price = price;
+    }
     public double calculate(){
         return quant * price;
     }

@@ -2,12 +2,16 @@ package market.application;
 
 import market.entities.Item;
 
+import java.util.Scanner;
+
 public class Program {
     public static void main(String args[]){
-        Item item1 = new Item();
-        item1.name = "Geladeira";
-        item1.price = 2313.00;
-        item1.quant = 12;
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        double price = sc.nextDouble();
+        //int quant = sc.nextInt();
+        sc.close();
+        Item item1 = new Item(name, price);
         System.out.println(item1);
         item1.remove(2);
         System.out.println(item1);
