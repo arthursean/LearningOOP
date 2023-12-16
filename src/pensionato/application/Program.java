@@ -32,6 +32,7 @@ public class Program {
                 continue;
             }
             System.out.println("Quarto ocupado por: " + quarto);
+            i+=1;
         }
     }
 }
