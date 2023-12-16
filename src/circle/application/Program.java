@@ -15,7 +15,7 @@ public class Program {
         radius = sc.nextDouble();
         System.out.println(Circle.circumference(radius));
         System.out.println(Circle.volume(radius));
-        System.out.println(Circle.PI);
+        System.out.println(Circle.volume(radius));
 
 
     }
