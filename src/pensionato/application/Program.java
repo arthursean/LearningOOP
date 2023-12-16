@@ -23,6 +23,7 @@ public class Program {
             String email = sc.next();
             quartos[quartoEscolhido] = new Quarto(nome, email);
         }
+        sc.close();
         int i = 0;
         for(Quarto quarto: quartos){
             System.out.print("Quarto #" + i + " ");
@@ -32,7 +33,6 @@ public class Program {
                 continue;
             }
             System.out.println("Quarto ocupado por: " + quarto);
-            i+=1;
         }
     }
 }
