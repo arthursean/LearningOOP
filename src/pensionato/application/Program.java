@@ -23,7 +23,7 @@ public class Program {
             String email = sc.next();
             quartos[quartoEscolhido] = new Quarto(nome, email);
         }
-        sc.close().
+        sc.close();
         int i = 0;
         for(Quarto quarto: quartos){
             System.out.print("Quarto #" + i + " ");
