@@ -1,2 +1,2 @@
 # learningOOP
-Learning oop
+Learning OOP
