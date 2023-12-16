@@ -10,9 +10,9 @@ public class Program {
         List<Person> list = new ArrayList<>();
         list.add(new Person("Arthur", 1.73, 19));
         list.add(new Person("Joca", 1.75, 19));
-
         for(Person x : list){
             System.out.println(x);
+            x.ageUp();
         }
     }
 }
