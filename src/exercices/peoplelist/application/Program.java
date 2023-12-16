@@ -12,9 +12,6 @@ public class Program {
         list.add(new Person("Joca", 1.75, 19));
 
         for(Person x : list){
-            if(x.getName().equals("Arthur")){
-                x.setHeight(x.getHeight() + 0.03);
-            }
             System.out.println(x);
         }
     }

@@ -18,7 +18,7 @@ public class Person {
         return age;
     }
     public void ageUp(){
-        age += 1;
+        age ++;
     }
     public double getHeight(){
         return height;
