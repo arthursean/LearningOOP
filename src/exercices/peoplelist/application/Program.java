@@ -14,5 +14,12 @@ public class Program {
             System.out.println(x);
             x.ageUp();
         }
+        for(int i = 0; i < list.size(); i++){
+            if(list.get(i).getName().equals("Arthur")){
+                System.out.println(i);
+                break;
+            };
+        }
+        System.out.println(list.get(1).getAge());
     }
 }
