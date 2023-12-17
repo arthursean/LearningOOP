@@ -22,11 +22,16 @@ public class Program {
         }*/
         System.out.println(list);
         List<String> n = list.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
+        n.add("Aluisio");
         System.out.println(n);
         String firstNameA = list.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null);
         System.out.println(firstNameA);
         int  indexA = list.indexOf(list.stream().filter(x -> x.charAt(0) == 'A').findFirst().orElse(null));
         System.out.println(indexA);
-
+        System.out.println(list.contains("Arthur"));
+        n.retainAll(list);
+        System.out.println(n);
+        n.set(1, "Aluisio");
+        System.out.println(n);
     }
 }
