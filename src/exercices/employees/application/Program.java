@@ -44,6 +44,8 @@ public class Program {
         double percentage = sc.nextDouble();
         employees.get(index).raise(percentage);
         System.out.println(employees);
+        employees.removeIf(x -> x.getSalary() > 12000);
+        System.out.println(employees);
         sc.close();
     }
     public static boolean idTaken(List<Employee> list, int id){
