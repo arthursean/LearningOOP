@@ -10,6 +10,8 @@ public class Program {
         List<Person> list = new ArrayList<>();
         list.add(new Person("Arthur", 1.73, 19));
         list.add(new Person("Joca", 1.75, 19));
+        list.add(new Person("Caio", 1.78, 19));
+
         for(Person x : list){
             System.out.println(x);
             x.ageUp();
@@ -20,6 +22,7 @@ public class Program {
                 break;
             };
         }
+        list.removeIf(x -> x.getName().equals("Arthur"));
         System.out.println(list.get(1).getAge());
     }
 }
