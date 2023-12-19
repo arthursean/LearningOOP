@@ -20,7 +20,7 @@ public class Program {
             if(list.get(i).getName().equals("Arthur")){
                 System.out.println(i);
                 break;
-            };
+            }
         }
         list.removeIf(x -> x.getName().equals("Arthur"));
         System.out.println(list.get(1).getAge());
