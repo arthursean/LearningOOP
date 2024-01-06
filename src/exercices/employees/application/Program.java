@@ -45,7 +45,7 @@ public class Program {
         }
         sc.close();
         System.out.println(employees);
-        List<Employee> under9k = employees.stream().filter(x -> x.getSalary() < 9000).collect(Collectors.toList());
+        List<Employee> under9k = employees.stream().filter(x -> x.getSalary() < 9000).collect(Collectors.toList());//stream é para aceitar operações lambda
         List<Employee> above9k = employees.stream().filter(x -> x.getSalary() >= 9000).collect(Collectors.toList());//Usando apenas o .toList() gera uma lista imutável
         System.out.println("Funcionarios com salário menor que 9k:");
         for(Employee x : under9k){
