@@ -14,7 +14,7 @@ public class Order {
     private LocalDateTime moment;
     private OrderStatus status;
     private Client client;
-    private List<OrderItem> items = new ArrayList<>();
+    private final List<OrderItem> items = new ArrayList<>();
 
     public Order(){}
 
