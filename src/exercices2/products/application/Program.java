@@ -30,7 +30,7 @@ public class Program {
             Double price = sc.nextDouble();
             if(choice == 'u'){
                 System.out.print("Manufacture date (dd/MM/yyyy): ");
-                productsList.add(new UsedProduct(name, price, LocalDate.parse(sc.next(), fmt01)));
+                productsList.add(new UsedProduct(name, price, LocalDate.parse(sc.next(), fmt01)));//polymorphism
                 continue;
             }
             if(choice == 'i'){

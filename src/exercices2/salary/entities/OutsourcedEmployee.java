@@ -1,6 +1,6 @@
 package exercices2.salary.entities;
 
-public class OutsourcedEmployee extends Employee{
+public final class OutsourcedEmployee extends Employee{
     private Double additionalCharge;
 
     public OutsourcedEmployee() {
